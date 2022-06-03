@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="content">
+    <h1>Check whether you're Diabetic</h1>
+    <br>
+    <br>
+
+    <form action="/" method="POST">
+        <div class="input">
+            Number of Pregnancies <input type="number" min="0" step="any" name="pregnancy" id="text"
+                placeholder="Enter Here" autofocus="autofocus" required>
+            Glucose level <input type="number" min="0" step="any" name="glucose" id="text" placeholder="Enter Here"
+                required>
+            Blood Pressure <input type="number" min="0" step="any" name="bp" id="text" placeholder="Enter Here"
+                required>
+            Skin Thickness <input type="number" min="0" step="any" name="skin" id="text" placeholder="Enter Here"
+                required>
+            Insulin <input type="number" min="0" step="any" name="insulin" id="text" placeholder="Enter Here" required>
+            Body mass Index (BMI) <input type="number" min="0" step="any" name="BMI" id="text" placeholder="Enter Here"
+                required>
+            Diabetes Pedigree Function <input type="number" min="0" step="any" name="dbf" id="text"
+                placeholder="Enter Here" required>
+            Age <input type="number" min="0" step="any" name="Age" id="text" placeholder="Enter Here" required>
+
+        </div>
+        <br>
+        <br>
+        <input type="submit" value="CHECK" class="submit">
+
+        <div class="final">
+            <p class="result">
+            <h2>
+                RESULT : {{ msg }}
+            </h2>
+            </p>
+        </div>
+    </form>
+</div>
+
+
+{% endblock %}

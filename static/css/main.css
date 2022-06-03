@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(3, 79, 91);
+}
+
+H1 {
+    color: white;
+    font-family: "Dancing Script", cursive;
+}
+
+.content {
+    margin: 0 auto;
+    /* width: 800px; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 480px;
+    align-items: center;
+    color: rgb(253, 255, 240);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+#text {
+    text-transform: capitalize;
+    font-family: "Kaushan Script", cursive;
+    padding: 5px;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 2px;
+    margin-bottom: 1px;
+}
+
+.submit {
+    padding: 6px;
+    width: 100px;
+    border-radius: 8px;
+    background-color: rgb(190, 160, 27);
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: "Kaushan Script", cursive;
+}
+
+.submit:hover {
+    background-color: rgb(223, 197, 84);
+}
+
+
+.h2 {
+    color: rgb(240, 213, 91);
+    font-weight: 200;
+}
+
+.final {
+    color: rgb(240, 213, 91);
+    font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+    .content {
+        max-width: fit-content;
+        width: auto;
+    }
+
+    .input {
+        max-width: fit-content;
+        width: auto;
+    }
+
+}
+
+@media (max-width: 480px) {
+    body {
+        max-width: device-width;
+
+    }
+
+    .input {
+        max-width: fit-content;
+        width: auto;
+    }
+
+}
