@@ -5,6 +5,12 @@ body {
 H1 {
     color: white;
     font-family: "Dancing Script", cursive;
+    margin-bottom: 1px;
+}
+
+H3 {
+    color: rgb(240, 200, 166);
+    font-weight: 400;
 }
 
 .content {
