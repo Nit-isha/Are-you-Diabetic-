@@ -1,4 +1,5 @@
 body {
+    /* background-color: rgb(7, 49, 67); */
     background-color: rgb(3, 79, 91);
 }
 
@@ -9,7 +10,7 @@ H1 {
 }
 
 H3 {
-    color: rgb(240, 200, 166);
+    color: rgb(230, 182, 119);
     font-weight: 400;
 }
 
@@ -27,6 +28,7 @@ H3 {
     color: red;
 }
 
+
 .input {
     display: grid;
     grid-template-columns: auto auto;
@@ -37,7 +39,7 @@ H3 {
     /* text-transform: capitalize; */
 }
 
-#text {
+input[type="number"] {
     /* text-transform: capitalize; */
     font-family: "Kaushan Script", cursive;
     padding: 5px;
@@ -61,7 +63,6 @@ H3 {
     background-color: rgb(223, 197, 84);
 }
 
-
 .h2 {
     color: rgb(240, 213, 91);
     font-weight: 200;
@@ -72,6 +73,15 @@ H3 {
     font-weight: 600;
 }
 
+#msg {
+    color: rgb(248, 140, 40);
+}
+
+label::after {
+    content: " *";
+    color: rgb(245, 101, 101);
+}
+
 
 @media (max-width: 768px) {
     .content {
@@ -80,10 +90,9 @@ H3 {
     }
 
     .input {
-        max-width: fit-content;
-        width: auto;
+        width: calc(70vw);
+        max-width: 100%;
     }
-
 }
 
 @media (max-width: 480px) {
@@ -93,8 +102,8 @@ H3 {
     }
 
     .input {
-        max-width: fit-content;
-        width: auto;
-    }
+        width: calc(100vw - 40px);
+        max-width: 100%;
 
+    }
 }
