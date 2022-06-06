@@ -2,15 +2,15 @@
 from flask import Flask, render_template, request
 from Main import Check
 
-application = Flask(__name__)
+app = Flask(__name__)
 
 
-@application.route("/", methods=['GET'])
+@app.route("/", methods=['GET'])
 def index_get():
     return render_template('index.html', msg='')
 
 
-@application.route('/', methods=['POST'])
+@app.route('/', methods=['POST'])
 def index_post():
 
     AccuracyMsg = 'Accuracy of this model is 78.78%.'
@@ -30,4 +30,4 @@ def index_post():
 
 
 if __name__ == "__main__":
-    application.run(debug=True)
+    app.run(debug=True)
