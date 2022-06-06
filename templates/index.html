@@ -5,24 +5,25 @@
     <h1>Check whether you're Diabetic</h1>
     <h3>Only for Women!</h3>
     <br>
-    <br>
+
 
     <form action="/" method="POST">
         <div class="input">
-            Number of Pregnancies <input type="number" min="0" step="any" name="pregnancy" id="text"
-                placeholder="Enter Here" autofocus="autofocus" required>
-            Glucose level <input type="number" min="0" step="any" name="glucose" id="text" placeholder="Enter Here"
+            Number of Pregnancies* <input type="number" min="0" step="any" name="pregnancy" id="text"
+                placeholder="eg. 1,2,3..." autofocus="autofocus" required>
+            Glucose level* <input type="number" min="0" step="any" name="glucose" id="text" placeholder="eg. 173"
                 required>
-            Blood Pressure <input type="number" min="0" step="any" name="bp" id="text" placeholder="Enter Here"
+            Blood Pressure (mm Hg)* <input type="number" min="0" step="any" name="bp" id="text" placeholder="eg. 64"
                 required>
-            Skin Thickness <input type="number" min="0" step="any" name="skin" id="text" placeholder="Enter Here"
+            Skin Thickness (mm)* <input type="number" min="0" step="any" name="skin" id="text" placeholder="eg. 35"
                 required>
-            Insulin <input type="number" min="0" step="any" name="insulin" id="text" placeholder="Enter Here" required>
-            Body mass Index (BMI) <input type="number" min="0" step="any" name="BMI" id="text" placeholder="Enter Here"
+            Insulin (muU/ml)* <input type="number" min="0" step="any" name="insulin" id="text" placeholder="eg. 158"
                 required>
-            Diabetes Pedigree Function <input type="number" min="0" step="any" name="dbf" id="text"
-                placeholder="Enter Here" required>
-            Age <input type="number" min="0" step="any" name="Age" id="text" placeholder="Enter Here" required>
+            Body mass Index (BMI)* <input type="number" min="0" step="any" name="BMI" id="text" placeholder="eg 34.9"
+                required>
+            Diabetes Pedigree Function* <input type="number" min="0" step="any" name="dbf" id="text"
+                placeholder="eg. 0.545" required>
+            Age (years)* <input type="number" min="0" step="any" name="Age" id="text" placeholder="Age" required>
 
         </div>
         <br>
@@ -33,7 +34,10 @@
             <p class="result">
             <h2>
                 RESULT : {{ msg }}
+                <br>
+
             </h2>
+            <h3>{{ AccuracyMsg }}</h3>
             </p>
         </div>
     </form>

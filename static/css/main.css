@@ -23,6 +23,10 @@ H3 {
     justify-content: center;
 }
 
+.required {
+    color: red;
+}
+
 .input {
     display: grid;
     grid-template-columns: auto auto;
@@ -30,11 +34,11 @@ H3 {
     align-items: center;
     color: rgb(253, 255, 240);
     font-weight: 400;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 #text {
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-family: "Kaushan Script", cursive;
     padding: 5px;
     align-items: center;

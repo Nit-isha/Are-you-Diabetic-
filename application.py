@@ -12,6 +12,8 @@ def index_get():
 
 @application.route('/', methods=['POST'])
 def index_post():
+
+    AccuracyMsg = 'Accuracy of this model is 78.78%.'
     pregnancy = request.form.get('pregnancy')
     glucose = request.form.get('glucose')
     bp = request.form.get('bp')
@@ -24,7 +26,7 @@ def index_post():
     data = (pregnancy, glucose, bp, skin, insulin, BMI, dbf, Age)
     msg = Check(data)
 
-    return render_template('index.html', msg=msg)
+    return render_template('index.html', msg=msg, AccuracyMsg=AccuracyMsg)
 
 
 if __name__ == "__main__":
